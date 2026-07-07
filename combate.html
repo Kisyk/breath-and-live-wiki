@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Combate & Efeitos — Breathe and Live 1934</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="app">
+<aside id="sidebar"></aside>
+<main>
+
+<p class="crumb"><a href="index.html">Início</a> › Fundamentos</p>
+<h1>Combate & Efeitos</h1>
+<p class="lead">Economia de ações, reações, ataques básicos, condições, desmembramento — e a morte.</p>
+
+<h2 id="economia">Economia de Ações</h2>
+<dl>
+<dt>Ação</dt>
+<dd>Uma ação em combate representa o núcleo do turno de um jogador e pode ser usada para atacar, fazer testes de perícia ou outras manobras. Cada jogador ganha <span class="formula">1 ação a cada 10 pontos de Velocidade</span>.</dd>
+<dt>Reação</dt>
+<dd>Pontos de reação permitem responder a situações dinâmicas durante a rodada — golpear, esquivar ou ajudar. Podem ser gastos a qualquer momento da rodada, enquanto houver pontos de reação restantes.</dd>
+<dt>Movimento</dt>
+<dd>Deslocamento padrão de 9 m (30 ft), usável antes ou depois da ação. Ataques ou ações podem ocorrer em qualquer ponto da fase de movimento, dando controle total sobre o posicionamento.</dd>
+<dt>Ações que não são ataque</dt>
+<dd>Algumas ações não são ataques, mas ainda exigem uma ação completa: trocar de arma, recarregar, envenenar/revestir a arma, criar itens (<a href="equipamentos.html#criacao">crafting</a>), comandar seu corvo; para o <a href="espadachim.html">Espadachim Caçador</a>, a Respiração de Recuperação; para a <a href="demonificacao.html">Demonificação</a>, o Aprimoramento de Perícia e o Consumo de Carne de Demônio.</dd>
+<dt>Ações bônus</dt>
+<dd>Ações que podem ser feitas à vontade durante o turno, que afetam o personagem mas não custam uma ação completa. Itens, habilidades etc. serão rotulados como ação bônus quando não exigirem uma ação inteira.</dd>
+</dl>
+
+<h2 id="reacoes">Reações — usos de Pontos de Reação</h2>
+<p>Pontos de Reação (PR) emulam o tempo de reação de frações de segundo que os caçadores precisam ter para sobreviver aos demônios. Há várias reações diferentes desbloqueáveis ao longo da campanha; jogadores começam com a <b>Reação de Esquiva</b>.</p>
+<ul>
+<li><b>Recuperando PR:</b> só é possível recuperar PR descansando por 8 horas completas.</li>
+<li><b>Múltiplos pontos:</b> cada tipo de reação pode ser usada com um ou dois pontos. Um ponto ativa o movimento, tipicamente para uma única pessoa ou para si mesmo. Dois pontos são comuns quando a reação ajuda outro jogador ou quando não se quer correr o risco de falhar.</li>
+</ul>
+<table>
+<tr><th>Reação</th><th>1 Ponto</th><th>2 Pontos</th></tr>
+<tr><td class="num">Esquiva<br><small>(inicial)</small></td><td>Esquiva automaticamente de 1 ataque.</td><td>Permite puxar um (1) alvo junto com você.</td></tr>
+<tr><td class="num">Saque Rápido<br><small>(desbloqueável)</small></td><td>Troca de arma sem gastar ação.</td><td>Ataca com a arma sacada e volta para a arma anterior.</td></tr>
+<tr><td class="num">Ataque<br><small>(desbloqueável)</small></td><td>Permite um ataque mesmo fora do turno.</td><td>Garante o acerto, mesmo que o inimigo use um ponto de esquiva.</td></tr>
+<tr><td class="num">Medicina<br><small>(desbloqueável)</small></td><td>Sucesso automático em um teste de medicina, ou ativa um item de cura em um alvo.</td><td>Cura o valor máximo de um item de cura OU sucesso automático em um teste de medicina.</td></tr>
+<tr><td class="num">Cura<br><small>(só <a href="demonificacao.html">Demonificação</a>)</small></td><td>Rola automaticamente cura igual à patente mais alta de sangue demoníaco consumido.</td><td>Como o uso de 1 ponto, mas sem rolagem: cura o valor máximo do dado.</td></tr>
+</table>
+
+<h2 id="ataques-basicos">Ataques Básicos</h2>
+<p>Ao contrário das formas de respiração, ataques básicos <b>não acertam automaticamente</b>: role um d20 e iguale ou supere a CA do alvo. A rolagem recebe bônus de Força <i>ou</i> Fineza — e o atributo que não for escolhido é somado ao <b>dano</b> como bônus. Ataques básicos não custam vigor.</p>
+<div class="box red"><p>Embora o dano de um ataque básico pareça fraco comparado às técnicas de respiração, um ataque básico pode <b>matar instantaneamente um humano adulto</b>.</p></div>
+<p><b>Armas de fogo</b> exigem um teste de Fineza contra a CA do alvo (contra objetos, usa-se Precisão). Em combate, armas de fogo somam a Precisão ao dano. Veja a lista completa em <a href="armas.html">Armas</a>.</p>
+<table>
+<tr><th>Arma</th><th>Dano</th><th>Alcance</th></tr>
+<tr><td>Desarmado</td><td class="dmg">1d4 + Força</td><td>1,5 m (5 ft)</td></tr>
+<tr><td>Lâmina Nichirin — Padrão</td><td class="dmg">1d6</td><td>1,5 m</td></tr>
+<tr><td>Lâmina Nichirin — Retorcida</td><td class="dmg">1d8</td><td>1,5 m</td></tr>
+<tr><td>Lâmina Nichirin — Wakizashi</td><td class="dmg">1d4</td><td>1,5 m</td></tr>
+<tr><td>Lâmina Nichirin — Agulha <small>(recobre-se de veneno ao ser embainhada)</small></td><td class="dmg">1d4</td><td>1,5 m</td></tr>
+<tr><td>Lâmina Nichirin — Serrilhada</td><td class="dmg">2d6</td><td>1,5 m</td></tr>
+<tr><td>Lâmina Nichirin — Maul (mangual)</td><td class="dmg">1d12</td><td>9 m (30 ft)</td></tr>
+<tr><td>Lâmina Nichirin — Chicote</td><td class="dmg">1d10</td><td>9 m</td></tr>
+<tr><td>Espadas-corrente Duplas Nichirin</td><td class="dmg">2d10</td><td>3 m (10 ft)</td></tr>
+<tr><td>Pistola</td><td class="dmg">1d8</td><td>45 m (150 ft)</td></tr>
+<tr><td>Rifle</td><td class="dmg">1d12</td><td>90 m (300 ft)</td></tr>
+<tr><td>Escopeta de Trincheira</td><td class="dmg">3d6</td><td>15 m (50 ft)</td></tr>
+</table>
+
+<h2 id="efeitos">Efeitos (Condições)</h2>
+<h3>Efeitos Corporais</h3>
+<dl>
+<dt>Sangramento</dt><dd>O alvo perde 1d4 de vida por sangramento a cada rodada. Pode ser curado com respiração de recuperação (com <a href="habilidades-superiores.html#tcbc">RCT: Constante</a>) ou bandagens.</dd>
+<dt>Queimadura</dt><dd>O alvo recebe 1 ponto de dano de fogo por rodada.</dd>
+<dt>Encapsulado</dt><dd>O alvo fica preso dentro de uma Arte Demoníaca de Sangue e não pode agir até ser libertado (ou até que os pré-requisitos da arte sejam cumpridos).</dd>
+<dt>Congelado</dt><dd>Um membro ou o corpo do alvo fica inutilizável por 1d4 rodadas.</dd>
+<dt>Feral</dt><dd>O alvo não age por vontade própria e ataca qualquer alvo ao alcance com ataques básicos.</dd>
+<dt>Envenenado</dt><dd>O alvo tem atributos reduzidos ou sofre dano igual à potência do veneno a cada rodada.</dd>
+<dt>Paralisado</dt><dd>O alvo não pode se mover, mas ainda pode falar.</dd>
+<dt>Lentidão</dt><dd>O alvo só pode usar uma ação a cada dois turnos.</dd>
+<dt>Fumaça</dt><dd>Perde −1 de vigor por rodada, por acúmulo (stack). Com 10 acúmulos, perde a consciência. Limpa-se usando respiração de recuperação em ar puro.</dd>
+<dt>Amaldiçoado</dt><dd>O alvo fica sujeito às regras de uma maldição até morrer ou até que ela seja removida — de drenagem de vida a redução de atributos, ou até marcação para a morte após um número de rodadas, conforme o demônio conjurador.</dd>
+<dt>Surpreso</dt><dd>Pego desprevenido no início do combate, o alvo perde seu primeiro turno.</dd>
+</dl>
+
+<h3>Efeitos Sensoriais</h3>
+<dl>
+<dt>Anosmia</dt><dd>Falha automaticamente em testes de percepção que exijam olfato.</dd>
+<dt>Ageusia</dt><dd>Falha automaticamente em testes de percepção que exijam paladar.</dd>
+<dt>Cego</dt><dd>Falha automaticamente em testes de percepção que exijam visão.</dd>
+<dt>Surdo</dt><dd>Falha automaticamente em testes de percepção que exijam audição.</dd>
+<dt>Dormência</dt><dd>Falha automaticamente em testes de percepção que exijam tato.</dd>
+<dt>Controlado</dt><dd>O alvo perde o controle do corpo para uma Arte Demoníaca de Sangue.</dd>
+<dt>Enfeitiçado</dt><dd>Não pode ferir quem o enfeitiçou e passa a perceber os inimigos do enfeitiçador como seus próprios inimigos.</dd>
+<dt>Luto</dt><dd>Tomado pela culpa, o alvo precisa passar num teste de Resistência (CD 15).</dd>
+<dt>Desequilibrado</dt><dd>Não pode usar pontos de reação pelo resto da rodada.</dd>
+</dl>
+
+<h2 id="desmembramento">Desmembramento</h2>
+<p>O desmembramento permite que demônios e humanos virem a maré da batalha. Para os humanos, desabilitar demônios é quase esperado — uma das poucas formas de nivelar o campo. Para os demônios, é uma ótima maneira de intimidar oponentes mais fracos e fazê-los sofrer.</p>
+<p>Remover um membro quase sempre inibe as mecânicas de ambos. Ataques podem mirar partes específicas do corpo; é preciso causar uma quantidade definida de dano <b>em um único golpe</b> — isso vale apenas para demônios; humanos podem perder membros mesmo com dano acumulado ao longo de várias rodadas. Membros costumam ter vida igual a 10%–20% da vida total do inimigo.</p>
+
+<table>
+<tr><th>Alvo</th><th>Parte [proporção da vida total]</th><th>Efeito</th></tr>
+<tr><td class="num" rowspan="3">Humano</td><td>Braços [20%]</td><td>—</td></tr>
+<tr><td>Pernas [20%]</td><td>1 perna: metade da velocidade · 2 pernas: velocidade 0</td></tr>
+<tr><td>Sensorial: orelhas, língua, olhos, nervos [5% cada]</td><td>Perda do sentido correspondente</td></tr>
+<tr><td class="num" rowspan="4">Demônio</td><td>Cabeça [&lt;20%]</td><td><b>Morte</b></td></tr>
+<tr><td>Braços [20%]</td><td>Dano com os braços reduzido à metade</td></tr>
+<tr><td>Pernas [20%]</td><td>Movimento reduzido à metade</td></tr>
+<tr><td>Asas</td><td>Voo desabilitado</td></tr>
+</table>
+
+<h2 id="morte"><img class="icon-inline" src="img/ico-caveira.png" alt="">Morte</h2>
+<p>Sem meias palavras: a morte é injusta. Este sistema amplifica os pilares de Kimetsu no Yaiba — uma série em que os heróis conhecem bem a perda. Morrer neste sistema é fácil, mais fácil do que viver, e pode acontecer de repente. Perder todos os seus PV significa que você perdeu sangue, ar e vontade demais para que seu corpo contenha a alma dentro dele. <b>Ao chegar a 0 PV, você está morto</b> — guarde, imortalize ou rasgue sua ficha.</p>
+<p>Certas habilidades, remédios e itens podem impedi-lo de cair abaixo de 1 de vida por um tempo, mas sem cuidados imediatos, você está morto. Claro, isso pode mudar se o seu Mestre encontrar coração para permitir!</p>
+<blockquote>
+“Envelhecer e morrer é o que dá sentido e beleza ao breve intervalo de uma vida humana. É justamente porque envelhecemos e morremos que nossas vidas têm valor e nobreza. Força não é uma palavra que signifique muito no que diz respeito à carne.”
+<footer>— Kyojuro Rengoku</footer>
+</blockquote>
+
+<div class="pager">
+<a href="habilidades.html">← Habilidades Iniciais</a>
+<a href="classes.html">Escolhendo uma Classe →</a>
+</div>
+
+</main>
+</div>
+<script src="nav.js"></script>
+</body>
+</html>

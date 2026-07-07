@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Técnicas de Respiração — Breathe and Live 1934</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="app">
+<aside id="sidebar"></aside>
+<main>
+
+<p class="crumb"><a href="index.html">Início</a> › Respirações</p>
+<h1>Técnicas de Respiração <span class="jp">呼吸</span></h1>
+<p class="lead">Os estilos de esgrima sobrenaturais do Esquadrão — formas, custos de vigor e habilidades especiais.</p>
+
+<div class="box blue">
+<p><b>Regras básicas</b> (detalhadas na página do <a href="espadachim.html">Espadachim Caçador</a>):</p>
+<ul>
+<li>Formas de respiração <b>acertam automaticamente</b>, a menos que o demônio use um ponto de reação para evitá-las;</li>
+<li>Formas <b>custam vigor</b> — chegar a 0 de vigor pode incapacitar;</li>
+<li>Exigem <b>Respiração de Concentração Total</b> ativa (1 vigor por rodada até dominar <a href="habilidades-superiores.html#tcbc">RCT: Constante</a>).</li>
+</ul>
+</div>
+
+<h2>Como ler as fichas de forma</h2>
+<p>Cada estilo traz: uma descrição dos movimentos e dos traços de personalidade comuns aos usuários; a lista de formas numeradas com <b>atributo usado</b>, <b>custo de vigor</b>, <b>alcance</b> e <b>dano</b>; a <b>habilidade especial</b> concedida por aprender todas as formas do estilo; e os <b>requisitos do estilo</b> (sentidos, feitos e armas necessários).</p>
+<p>Palavras-chave dos efeitos:</p>
+<ul>
+<li><span class="tag straight">Linha Reta</span> Deve se mover em 1 direção.</li>
+<li><span class="tag charge">Tempo de Carga</span> Requer 1 rodada para carregar; ser atacado interrompe a carga.</li>
+<li><span class="tag ranged">À Distância</span> Pode ser usada do corpo a corpo até a distância permitida.</li>
+<li><span class="tag regen">Regenerador</span> Regenera vigor.</li>
+<li><span class="tag deflect">Defletor / Anulador</span> Remove dano recebido.</li>
+<li><span class="tag affliction">Aflição</span> Causa efeito de estado (<a href="combate.html#efeitos">condições</a>).</li>
+<li><span class="tag chaser">Perseguidor</span> Não pode ser reagido nem esquivado.</li>
+<li><span class="tag cleave">Varredura</span> Atinge todos os inimigos dentro do alcance.</li>
+<li><span class="tag shield">Escudo</span> Cria um escudo circular de 3 m que anula o próximo ataque.</li>
+</ul>
+
+<h2>Estilos Canônicos</h2>
+<div class="grid">
+<a class="card" href="respiracao-sol.html"><b>Sol</b><small>13 formas · requer Prodígio</small></a>
+<a class="card" href="respiracao-lua.html"><b>Lua</b><small>16 formas · lutador solitário</small></a>
+<a class="card" href="respiracao-chamas.html"><b>Chamas</b><small>9 formas · requer Espírito</small></a>
+<a class="card" href="respiracao-agua.html"><b>Água</b><small>10 formas · versátil</small></a>
+<a class="card" href="respiracao-vento.html"><b>Vento</b><small>9 formas · ciclones</small></a>
+<a class="card" href="respiracao-trovao.html"><b>Trovão</b><small>6 formas · iaijutsu</small></a>
+<a class="card" href="respiracao-pedra.html"><b>Pedra</b><small>5 formas · maul e machado</small></a>
+<a class="card" href="respiracao-flor.html"><b>Flor</b><small>6 formas · graça</small></a>
+<a class="card" href="respiracao-nevoa.html"><b>Névoa</b><small>6 formas · desaparecimento</small></a>
+<a class="card" href="respiracao-serpente.html"><b>Serpente</b><small>5 formas · decapitação</small></a>
+<a class="card" href="respiracao-som.html"><b>Som</b><small>6 formas · explosivos</small></a>
+<a class="card" href="respiracao-inseto.html"><b>Inseto</b><small>4 formas · venenos</small></a>
+<a class="card" href="respiracao-amor.html"><b>Amor</b><small>7 formas · chicote</small></a>
+<a class="card" href="respiracao-fera.html"><b>Fera</b><small>10 presas · selvageria</small></a>
+</div>
+
+<h2>Estilos Originais (Módulo)</h2>
+<p class="note">Estes estilos aparecem no módulo, mas não são canônicos à série.</p>
+<div class="grid">
+<a class="card" href="respiracao-oceano.html"><b>Oceano</b><small>7 formas · melhor na água</small></a>
+<a class="card" href="respiracao-oeste.html"><b>Oeste</b><small>13 formas · pistoleiro</small></a>
+<a class="card" href="respiracao-neve.html"><b>Neve</b><small>8 formas · precisão gélida</small></a>
+</div>
+
+<h2 id="criando-formas">Construindo suas Próprias Formas</h2>
+<p>Como as espadas nichirin básicas causam 1d6 base em corpo a corpo, formas de respiração devem ir além disso como linha de base. Ao construir formas, leve em conta o dano, a distância e efeitos subjacentes (ser inevitável, atravessar em linha reta etc.). Alguns efeitos podem ser alterados ou invertidos, com custo variável. Some os modificadores abaixo para chegar ao <b>custo de vigor</b> da forma:</p>
+
+<table>
+<tr><th colspan="2">Vigor por Dano</th><th colspan="2">Vigor por Distância</th><th colspan="2">Vigor por Efeito <small>(geralmente 1 efeito por forma)</small></th></tr>
+<tr><td>1d6</td><td class="num">−1</td><td>1,5 m / corpo a corpo</td><td class="num">−3</td><td><span class="tag straight">Linha Reta</span></td><td class="num">−3</td></tr>
+<tr><td>1d8</td><td class="num">0</td><td>3 m</td><td class="num">1</td><td><span class="tag charge">Tempo de Carga</span></td><td class="num">−5</td></tr>
+<tr><td>1d10</td><td class="num">1</td><td>4,5 m</td><td class="num">2</td><td><span class="tag ranged">À Distância</span></td><td class="num">3</td></tr>
+<tr><td>1d12</td><td class="num">2</td><td>6 m</td><td class="num">3</td><td><span class="tag regen">Regenerador</span></td><td class="num">3</td></tr>
+<tr><td>2d8</td><td class="num">3</td><td>7,5 m</td><td class="num">4</td><td><span class="tag deflect">Defletor / Anulador</span></td><td class="num">4</td></tr>
+<tr><td>3d6</td><td class="num">5</td><td>9 m</td><td class="num">5</td><td><span class="tag affliction">Aflição</span></td><td class="num">3</td></tr>
+<tr><td>1d20</td><td class="num">6</td><td colspan="2" rowspan="5" style="vertical-align:middle"><small>Caçadores com armas nichirin de alcance nativo (Maul, Chicote, Espada-corrente) não gastam vigor até o alcance base da arma.</small></td><td><span class="tag chaser">Perseguidor</span></td><td class="num">3</td></tr>
+<tr><td>3d8</td><td class="num">9</td><td><span class="tag cleave">Varredura</span></td><td class="num">2</td></tr>
+<tr><td>4d8</td><td class="num">12</td><td><span class="tag shield">Escudo</span></td><td class="num">4</td></tr>
+<tr><td>2d20</td><td class="num">13</td><td></td><td></td></tr>
+<tr><td>3d20</td><td class="num">16</td><td></td><td></td></tr>
+<tr><td>7d10</td><td class="num">20</td><td></td><td></td><td></td><td></td></tr>
+</table>
+
+<h2 id="combinados">Ataques Combinados</h2>
+<p>Ataques combinados são golpes coordenados executados por dois ou mais espadachins na mesma rodada. Quando múltiplos jogadores miram o mesmo inimigo e usam suas técnicas de respiração em conjunto, podem iniciar um ataque combinado — assaltos que liberam poder destrutivo muito maior que um golpe isolado, mas exigem esforço significativo e sincronia perfeita.</p>
+<ul>
+<li>Todos os participantes devem <b>anunciar a intenção no início da rodada</b>;</li>
+<li>Todos os ataques devem ocorrer <b>na mesma rodada</b>, contra <b>o mesmo inimigo</b>;</li>
+<li>Quando bem-sucedido, o dano total de todos os ataques envolvidos é multiplicado por <b>1,5×</b> (após somado);</li>
+<li>Cada jogador só pode executar um ataque combinado <b>uma vez por confronto</b>.</li>
+</ul>
+<h3>Opções de contrapartida (escolha da mesa)</h3>
+<ul>
+<li><b>A:</b> o custo de vigor de cada técnica usada no ataque combinado aumenta em 50%, arredondado para cima;</li>
+<li><b>B:</b> cada participante gasta 1 Ponto de Reação no início da rodada para iniciar o ataque combinado;</li>
+<li><b>C:</b> todos os participantes agem na menor iniciativa entre os espadachins envolvidos naquela rodada. Se alguém for nocauteado, a combinação quebra.</li>
+</ul>
+<p class="note">A perícia <a href="evolucao.html">Sincronia Perfeita</a> muda o multiplicador para 2×.</p>
+
+<div class="pager">
+<a href="demonio.html">← Demônio</a>
+<a href="respiracao-sol.html">Respiração do Sol →</a>
+</div>
+
+</main>
+</div>
+<script src="nav.js"></script>
+</body>
+</html>

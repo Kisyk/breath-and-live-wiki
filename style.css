@@ -1,0 +1,211 @@
+/* Breathe and Live 1934 — Wiki */
+:root{
+  --bg:#09090b;
+  --bg2:#0e0e11;
+  --panel:#141417;
+  --panel2:#1d1d21;
+  --ink:#e9e4e0;
+  --ink-dim:#9b948f;
+  --line:#2b2226;
+  --indigo:#c9273a;      /* vermelho principal (nome mantido por compatibilidade) */
+  --indigo-soft:#e8737d; /* vermelho suave */
+  --red:#d64545;
+  --gold:#d9a441;
+  --green:#5fae6e;
+  --radius:10px;
+  font-size:16px;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{
+  background:var(--bg);
+  color:var(--ink);
+  font-family:Georgia,'Times New Roman',serif;
+  line-height:1.65;
+}
+#app{display:flex;min-height:100vh}
+
+/* ---------- Sidebar ---------- */
+#sidebar{
+  width:280px;flex-shrink:0;
+  background:var(--bg2);
+  border-right:1px solid var(--line);
+  padding:1.2rem 1rem 3rem;
+  position:sticky;top:0;height:100vh;overflow-y:auto;
+}
+#sidebar .brand{
+  display:flex;align-items:center;gap:.7rem;text-decoration:none;color:var(--ink);
+  font-weight:bold;font-size:1rem;line-height:1.25;
+  padding-bottom:.9rem;border-bottom:1px solid var(--line);margin-bottom:.9rem;
+}
+#sidebar .brand img{width:52px;height:52px;flex-shrink:0;border-radius:50%;background:#fff2}
+#sidebar .brand small{display:block;color:var(--indigo-soft);font-weight:normal;font-size:.72rem;letter-spacing:.1em;text-transform:uppercase}
+#sidebar input{
+  width:100%;padding:.45rem .6rem;margin-bottom:.9rem;
+  background:var(--panel);border:1px solid var(--line);border-radius:6px;
+  color:var(--ink);font-family:inherit;font-size:.85rem;
+}
+#sidebar input:focus{outline:1px solid var(--indigo)}
+#sidebar details.nav-sec{
+  margin:.25rem 0;border:1px solid var(--line);border-radius:8px;
+  background:var(--panel);overflow:hidden;
+}
+#sidebar details.nav-sec[open]{border-color:#39445366}
+#sidebar summary{
+  cursor:pointer;list-style:none;user-select:none;
+  display:flex;align-items:center;gap:.4rem;
+  padding:.45rem .6rem;
+  font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;
+  color:var(--ink-dim);font-family:Verdana,sans-serif;
+}
+#sidebar summary::-webkit-details-marker{display:none}
+#sidebar summary::before{
+  content:"›";display:inline-block;color:var(--indigo-soft);
+  font-size:.9rem;line-height:1;transition:transform .15s;
+}
+#sidebar details[open] summary::before{transform:rotate(90deg)}
+#sidebar summary:hover{color:var(--indigo-soft);background:var(--panel2)}
+#sidebar summary .count{
+  margin-left:auto;font-size:.62rem;color:var(--ink-dim);
+  background:var(--panel2);border:1px solid var(--line);
+  border-radius:99px;padding:0 .45rem;letter-spacing:0;
+}
+#sidebar ul{list-style:none;margin:0;padding:.15rem .35rem .4rem}
+#sidebar li a{
+  display:block;padding:.22rem .55rem;border-radius:6px;
+  color:var(--ink);text-decoration:none;font-size:.88rem;
+}
+#sidebar li a:hover{background:var(--panel2);color:var(--indigo-soft)}
+#sidebar li a.current{background:var(--panel2);color:var(--indigo-soft);border-left:3px solid var(--indigo);padding-left:.4rem}
+
+/* ---------- Main ---------- */
+main{flex:1;min-width:0;padding:2.2rem 3rem 5rem;max-width:980px;margin:0 auto}
+h1{font-size:2rem;line-height:1.2;margin:.2rem 0 .6rem;border-bottom:2px solid var(--indigo);padding-bottom:.5rem}
+h1 .jp{font-size:1rem;color:var(--ink-dim);margin-left:.6rem;font-weight:normal}
+h2{font-size:1.35rem;margin-top:2.2rem;color:var(--indigo-soft);border-bottom:1px solid var(--line);padding-bottom:.25rem}
+h3{font-size:1.05rem;margin-top:1.5rem;color:var(--gold)}
+a{color:var(--indigo-soft)}
+a:hover{color:#b9c9f2}
+.crumb{font-size:.8rem;color:var(--ink-dim);margin:0 0 .4rem;font-family:Verdana,sans-serif}
+.crumb a{color:var(--ink-dim)}
+.lead{font-size:1.08rem;color:#c9cfd6;font-style:italic}
+hr{border:none;border-top:1px solid var(--line);margin:2rem 0}
+
+/* ---------- Boxes ---------- */
+.box{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:1rem 1.2rem;margin:1rem 0}
+.box.red{border-left:4px solid var(--red)}
+.box.blue{border-left:4px solid var(--indigo)}
+.box.gold{border-left:4px solid var(--gold)}
+.box.green{border-left:4px solid var(--green)}
+.box h2,.box h3{margin-top:.2rem;border:none}
+.note{font-size:.85rem;color:var(--ink-dim);font-style:italic}
+.formula{
+  display:inline-block;background:var(--panel2);border:1px solid var(--line);
+  border-radius:6px;padding:.15rem .55rem;font-family:'Courier New',monospace;
+  font-size:.9rem;color:var(--gold);
+}
+
+/* ---------- Tables ---------- */
+table{width:100%;border-collapse:collapse;margin:1rem 0;font-size:.9rem}
+th{
+  background:var(--panel2);text-align:left;padding:.5rem .6rem;
+  font-family:Verdana,sans-serif;font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;
+  color:var(--indigo-soft);border-bottom:2px solid var(--indigo);
+}
+td{padding:.5rem .6rem;border-bottom:1px solid var(--line);vertical-align:top}
+tr:nth-child(even) td{background:rgba(255,255,255,.02)}
+td.num{color:var(--gold);font-weight:bold;white-space:nowrap}
+td.dmg{white-space:nowrap;color:var(--red);font-weight:bold}
+
+/* ---------- Tags / badges ---------- */
+.tag{
+  display:inline-block;padding:.05rem .5rem;border-radius:99px;
+  font-family:Verdana,sans-serif;font-size:.68rem;letter-spacing:.04em;
+  border:1px solid var(--line);margin:.1rem .15rem .1rem 0;white-space:nowrap;
+}
+.tag.straight{background:#22303f;color:#8ec3e8;border-color:#35506a}
+.tag.charge{background:#3a2b20;color:#e8b78e;border-color:#6a5035}
+.tag.ranged{background:#20323a;color:#8ee0e8;border-color:#356a63}
+.tag.regen{background:#20362a;color:#8ee8a8;border-color:#356a45}
+.tag.deflect{background:#2e2a3a;color:#bfa8f0;border-color:#4d4370}
+.tag.affliction{background:#37202e;color:#e88ec3;border-color:#6a3550}
+.tag.chaser{background:#3a2020;color:#e88e8e;border-color:#6a3535}
+.tag.cleave{background:#38351f;color:#e8dd8e;border-color:#6a6435}
+.tag.shield{background:#233;color:#9dd;border-color:#466}
+.tag.unique{background:#333;color:#ddd}
+
+/* ---------- Style pages ---------- */
+.special-box{
+  background:linear-gradient(135deg,#1a2029,#232b38);
+  border:1px solid var(--indigo);border-radius:var(--radius);
+  padding:1rem 1.2rem;margin:1.4rem 0;
+}
+.special-box h2{margin-top:0;border:none;color:var(--gold)}
+.req-list{list-style:none;padding:0;margin:.5rem 0}
+.req-list li{padding:.2rem 0;border-bottom:1px dashed var(--line)}
+.req-list b{color:var(--indigo-soft)}
+
+/* ---------- Cards grid ---------- */
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:.8rem;margin:1rem 0}
+.card{
+  display:block;background:var(--panel);border:1px solid var(--line);
+  border-radius:var(--radius);padding:.9rem 1rem;text-decoration:none;color:var(--ink);
+  transition:border-color .15s;
+}
+.card:hover{border-color:var(--indigo)}
+.card b{display:block;color:var(--indigo-soft);margin-bottom:.2rem}
+.card small{color:var(--ink-dim);font-size:.8rem;line-height:1.4;display:block}
+
+/* ---------- Prev/next ---------- */
+.pager{display:flex;justify-content:space-between;margin-top:3rem;gap:1rem;font-size:.9rem}
+.pager a{
+  background:var(--panel);border:1px solid var(--line);border-radius:8px;
+  padding:.5rem .9rem;text-decoration:none;
+}
+.pager a:hover{border-color:var(--indigo)}
+
+/* ---------- Level table ---------- */
+.lvl td:first-child{color:var(--gold);font-weight:bold;white-space:nowrap}
+
+dt{color:var(--gold);font-weight:bold;margin-top:.8rem}
+dd{margin:0 0 .4rem 1rem;color:#c9cfd6}
+
+blockquote{
+  border-left:3px solid var(--red);margin:1.5rem 0;padding:.4rem 1.2rem;
+  color:#c9cfd6;font-style:italic;background:var(--panel);border-radius:0 8px 8px 0;
+}
+blockquote footer{font-style:normal;color:var(--ink-dim);font-size:.85rem;margin-top:.3rem}
+
+/* ---------- Figuras / imagens ---------- */
+figure.fig{
+  margin:1.2rem 0;padding:.7rem;background:var(--panel);
+  border:1px solid var(--line);border-radius:var(--radius);text-align:center;
+}
+figure.fig img{max-width:100%;height:auto;border-radius:6px;display:block;margin:0 auto}
+figure.fig figcaption{font-size:.78rem;color:var(--ink-dim);margin-top:.5rem;font-style:italic}
+figure.fig.right{float:right;width:290px;max-width:45%;margin:.2rem 0 1rem 1.2rem}
+figure.fig.small{max-width:420px;margin-left:auto;margin-right:auto}
+.hero{
+  margin:0 0 1.4rem;border:1px solid var(--line);border-radius:var(--radius);
+  overflow:hidden;background:var(--panel);
+}
+.hero img{width:100%;display:block}
+.fig-row{display:flex;gap:.8rem;flex-wrap:wrap;margin:1rem 0}
+.fig-row figure.fig{flex:1 1 180px;margin:0}
+.icon-row{display:flex;gap:1.4rem;align-items:center;flex-wrap:wrap;margin:.8rem 0}
+.icon-row img{width:54px;height:54px;opacity:.9}
+.icon-inline{width:42px;height:42px;vertical-align:middle;margin-right:.5rem;opacity:.9}
+
+/* ---------- Rodapé ---------- */
+.site-footer{
+  clear:both;margin-top:3.5rem;padding-top:1.2rem;border-top:1px solid var(--line);
+  font-size:.82rem;color:var(--ink-dim);line-height:1.7;
+}
+.site-footer a{color:var(--indigo-soft)}
+
+@media (max-width:860px){
+  figure.fig.right{float:none;width:auto;max-width:100%;margin:1rem 0}
+  #app{flex-direction:column}
+  #sidebar{width:100%;height:auto;position:static;border-right:none;border-bottom:1px solid var(--line)}
+  main{padding:1.4rem 1.2rem 4rem}
+}

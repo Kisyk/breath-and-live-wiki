@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Demônio — Breathe and Live 1934</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="app">
+<aside id="sidebar"></aside>
+<main>
+
+<p class="crumb"><a href="index.html">Início</a> › <a href="classes.html">Classes</a></p>
+<h1>Demônio <span class="jp">鬼</span></h1>
+<p class="lead">Artes Demoníacas de Sangue, anatomia extraordinária e a herança das 12 Belas Luas.</p>
+
+<h2>Habilidades de Classe</h2>
+<dl>
+<dt>Arte Demoníaca de Sangue (ADS)</dt>
+<dd>Uma habilidade única derivada do seu poder demoníaco, inspirada nas técnicas das Doze Luas. Cada Arte reflete sua natureza e estilo de luta, permitindo ataques que combinam ou utilizam vários efeitos. Jogadores podem usar exemplos prontos do módulo ou projetar os próprios, criando uma habilidade-assinatura. Esses ataques aumentam de poder quanto mais tempo você joga, mas custam pontos de sangue ganhos por descanso ou por comer carne humana.</dd>
+<dt>Anatomia Extraordinária</dt>
+<dd>Os traços antinaturais que moldam sua forma demoníaca — asas, guelras, tentáculos ou armas crescidas da própria carne definem como seu corpo funciona e luta. Uma vez escolhidos, permanecem por toda a campanha, embora possam evoluir uma vez antes do último nível. São ferramentas adicionais além das artes de sangue, mas podem ser usadas em conjunto.</dd>
+</dl>
+
+<h2>Progressão e Patentes</h2>
+<p>As patentes demoníacas seguem uma estrutura de poder estranha nesta era: as “luas” existem, mas em escala diferente do reinado de Muzan Kibutsuji. “Lua Superior” e “Lua Inferior” não existem mais como patente nominal — os 12 demônios mais fortes carregam o título de “Lua” junto de um título próprio, devido à pequena diferença de poder entre eles. As patentes abaixo servem apenas para escalar o poder em referência ao modelo antigo.</p>
+<table class="lvl">
+<tr><th>Nível</th><th>Patente</th><th>Atributos (conjunto adicional)</th></tr>
+<tr><td>1</td><td>Patente Baixa</td><td>(4, 3, 2, 1, 1, 1)</td></tr>
+<tr><td>2</td><td>Patente Alta</td><td>(4, 4, 3, 3, 2, 1)</td></tr>
+<tr><td>3</td><td>Discípulo de Lua Inferior</td><td>(5, 5, 4, 3, 3, 2)</td></tr>
+<tr><td>4</td><td>Lua Inferior</td><td>(6, 6, 5, 5, 4, 4)</td></tr>
+<tr><td>5</td><td>Discípulo de Lua Superior</td><td>(9, 7, 6, 6, 6, 5)</td></tr>
+<tr><td>6</td><td>Lua Superior</td><td>(10, 10, 10, 9, 9, 8)</td></tr>
+</table>
+<p>Para criar os atributos de um demônio, comece com a distribuição normal da criação de personagem <span class="formula">(0, 1, 2, 3, 3, 5)</span> e depois some o conjunto de números correspondente à patente pretendida.</p>
+<ul>
+<li><b>Vida:</b> <span class="formula">(PV inicial) + (5 × Força)</span></li>
+<li><b>Vigor:</b> demônios não precisam de vigor — seus corpos não se cansam.</li>
+<li><b>Pontos de Sangue Demoníaco (total):</b> <span class="formula">10 × Fortitude</span></li>
+<li><b>Cura Demoníaca por patente:</b> 1d10 (Baixa), 2d10 (Alta), 1d20 (Disc. L. Inferior e Lua Inferior), 1d100 (Disc. L. Superior e Lua Superior).</li>
+</ul>
+
+<h2>Ações do Demônio</h2>
+<p>Demônios têm, conforme seu nível, a capacidade de realizar mais de uma ação por turno: <span class="formula">ações = 1 + (Velocidade ÷ 5)</span>. Saber usá-las — curar, atacar ou ativar a arte de sangue — é essencial para a sobrevivência. Como os humanos, movem-se a cada rodada, embora o deslocamento varie conforme as habilidades e o formato do corpo.</p>
+<table>
+<tr><th>Ação</th><th>Descrição</th></tr>
+<tr><td class="num">Arte de Sangue</td><td>Conforme a linhagem, demônios têm acesso a algumas artes demoníacas comumente compartilhadas, além das suas próprias.</td></tr>
+<tr><td class="num">Curar <small>(2 PSD)</small></td><td>Conforme a patente, curam uma quantidade significativa de vida usando uma de suas ações no turno.</td></tr>
+<tr><td class="num">Regenerar <small>(4 PSD)</small></td><td>Usando uma ação, o demônio regenera partes do corpo removidas, com velocidade variável conforme a força de sua patente.</td></tr>
+<tr><td class="num">Purificar</td><td>Usando uma ação, o demônio limpa 1 acúmulo de veneno por patente.</td></tr>
+<tr><td class="num">Infectar</td><td>Demônios de Lua Inferior ou acima podem infectar seres humanos, transformando-os em demônios 4 patentes abaixo do doador.</td></tr>
+<tr><td class="num">S.O.S.</td><td>Demônios de um ramo podem chamar demônios próximos da mesma linhagem. Linhagens diferentes não têm conexão entre si e não podem pedir ajuda umas às outras.</td></tr>
+<tr><td class="num">Executar</td><td>Demônios de patente Discípulo de Lua Superior ou Lua Superior podem executar um ser humano com 5 PV ou menos. Execuções não podem ser esquivadas, mas podem ser reagidas.</td></tr>
+<tr><td class="num">Atacar</td><td>Usando uma ação ou ponto de reação, atacam com os ataques comuns a todos os demônios.</td></tr>
+<tr><td class="num">Bloquear</td><td>Como reação a um ataque, ou como ação preventiva, preparam-se para bloquear um golpe.</td></tr>
+<tr><td class="num">Esquivar</td><td>Usando uma reação comum ou ponto de reação, evitam ataques que venham em sua direção.</td></tr>
+</table>
+
+<h2>Anatomia Extraordinária</h2>
+<p><b>Pontos iniciais: 15</b></p>
+<dl>
+<dt>Asas — 3 pontos</dt>
+<dd>Um par de asas brota do seu corpo, concedendo voo de 9 m por rodada.</dd>
+<dt>Braços Extras — 2 pontos por braço (máx. 4)</dt>
+<dd>Membros adicionais crescem do corpo, permitindo empunhar mais armas de uma vez. Um ataque adicional por par de braços ganho.</dd>
+<dt>Olhos Múltiplos — 1 ponto por olho</dt>
+<dd>Bônus de +5 em testes de percepção.</dd>
+<dt>Forma Maleável — 5 pontos</dt>
+<dd>Transfigure o corpo em qualquer forma desejada relativa ao seu tamanho. Sofrer dano reverte a forma. Fora supersentidos, a forma é indistinguível ao olho humano.</dd>
+</dl>
+<p class="note">O documento também deixa um modelo aberto — “Nome: Descrição / Custo em pontos” — para criações próprias.</p>
+
+<h2>Construindo Artes Demoníacas de Sangue</h2>
+<p>Construir artes de sangue é simples, já que elas variam muito em dano, alcance e outros aspectos. Cada ataque terá dano, alcance e efeitos predefinidos. Na criação do personagem, demônios recebem pontos iniciais para projetar seus primeiros ataques; conforme avançam, desbloqueiam mais tipos de ataque e melhores customizações.</p>
+<ul>
+<li><b>Dano</b> — a parte mais importante; aumenta de escopo conforme o nível do demônio. Pode ser afetado por certos efeitos, então fique de olho nos bônus e ônus de cada um.</li>
+<li><b>Alcance</b> — uma das únicas partes que varia loucamente de nível a nível; não há aumento constante de distância.</li>
+<li><b>Slots de Efeito</b> — a quantidade de efeitos que um ataque de arte de sangue utiliza sem se desfazer. Quanto mais forte o ataque, menos efeitos ele pode usar — ataques fracos são melhores para afligir condições.</li>
+</ul>
+
+<h2 id="luas">Variantes — As 12 Belas Luas</h2>
+<figure class="fig right"><img src="img/demonio-luas.png" alt="Demônio de kimono com capuz de olhos"><figcaption>Arte de demônio do livro original.</figcaption></figure>
+<p>Das 12 variantes demoníacas, 12 classes de demônio estão disponíveis para quem… quiser ser demônio. Cada variante tem uma seleção própria de habilidades, herdadas de seu predecessor. Os demônios da nova era aprenderam um truque aterrorizante: agora <b>replicam sozinhos</b>. O problema: se forem fracos demais, suas replicações morrem com eles. Para garantir a segurança de seu trono, a rainha demônio criou um esquadrão de 12 demônios de nível Lua Superior. Esses 12 raramente se mostram e agem como líderes de exércitos menores — e, devido ao seu poder, todos os subordinados assumem atributos do líder. Encontrar esses lacaios pode levar os jogadores de volta a seus líderes; eliminá-los reduziria a população demoníaca em 1/12 — uma vitória massiva para a humanidade. Veja mais sobre a <a href="mundo.html#arvore">Árvore do Mal</a>.</p>
+
+<table>
+<tr><th>Prefixo da Lua</th><th>Características de identificação</th></tr>
+<tr><td class="num">Lua Dourada</td><td>Discípulos identificados apenas por trajes dourados.</td></tr>
+<tr><td class="num">Lua Ardente</td><td>Chamas, marcas de queimadura, cicatrizes de fogo, cinzas.</td></tr>
+<tr><td class="num">Lua Raivosa</td><td>Pelos, presas afiadas, olhos de animal.</td></tr>
+<tr><td class="num">Lua Mecânica</td><td>Engrenagens, relógios, peças mecânicas ou armaduras de metal.</td></tr>
+<tr><td class="num">Lua Ancestral</td><td>Ossos. Só… ossos.</td></tr>
+<tr><td class="num">Lua Espelhada</td><td>Espelhos ou superfícies refletoras.</td></tr>
+<tr><td class="num">Lua Sombria</td><td>Nenhuma característica identificável conhecida.</td></tr>
+<tr><td class="num">Lua Enlutada</td><td>Trajes formais, gore parcial, marcas de lágrimas.</td></tr>
+<tr><td class="num">Lua do Jardim</td><td>Flores, plantas, flora, frutas ou vegetais.</td></tr>
+<tr><td class="num">Lua Artesã</td><td>Identificados pelas ferramentas de artesanato que carregam.</td></tr>
+<tr><td class="num">Lua Mergulhante</td><td>Vida marinha, crustáceos e apetrechos de pesca.</td></tr>
+<tr><td class="num">Lua de Retalhos</td><td>Tecido, especialmente lona, ou remendos de panos indistintos.</td></tr>
+</table>
+
+<h2>Arte de Sangue por Variante</h2>
+<p class="note">No documento original, apenas a <b>Lua Ardente</b> tem sua arte de sangue preenchida (e a Lua Enlutada tem só os nomes dos ataques: Envoltório Negro, Rosa, Azul e Vermelho, Buquê e Anel). As outras dez variantes têm fichas em branco. As habilidades são lidas da coluna esquerda (níveis 1–3) para a direita (níveis 4–6).</p>
+
+<div class="box red">
+<h3>Arte Demoníaca de Sangue | Lua Ardente</h3>
+<dl>
+<dt>Nível 1 (Patente Baixa) — Ataque: Queimar · 4 PSD</dt>
+<dd>Discípulos da lua ardente sempre podem lançar fogo, causando no mínimo <b>1d4+Fortitude</b>. Ao acertar, também inflige um acúmulo de <a href="combate.html#efeitos">Queimadura</a>. Rola Fineza contra a CA do alvo.</dd>
+<dt>Nível 1 — Habilidade: Pele Ardente</dt>
+<dd>O corpo do discípulo permanece sempre em chamas de alguma forma: ataques físicos (desarmados) contra ele sempre infligem um acúmulo de Queimadura.</dd>
+<dt>Nível 2 (Patente Alta) — Ataque: Labareda · 4 PSD por alvo</dt>
+<dd>Lança Queimar em múltiplos alvos de uma vez, ou num único alvo várias vezes (3 alvos + 1 por nível acima do nível 2).</dd>
+<dt>Nível 3 (Discípulo de Lua Inferior) — Ataque: Incêndio · 10 PSD</dt>
+<dd>Mira áreas com uma chama eruptiva: 4,5 m em um quadrado ou círculo de área selecionada, que irrompe no turno seguinte causando <b>1d8+Fortitude</b> a todos dentro. Rola Fineza contra CA.</dd>
+<dt>Nível 3 — Habilidade: Portão de Cinzas</dt>
+<dd>Demônios da lua ardente podem se transportar até pilhas de cinzas de alvos que estejam queimando ou que já tenham queimado.</dd>
+<dt>Nível 4 (Lua Inferior) — Ataque: Ignição · 15 PSD</dt>
+<dd>Cria um marcador de erupção em um alvo, pessoa ou lugar. O marcador não pode ser esquivado, mas pode ser removido com métodos que o limpem, como água. Após uma rodada, o alvo entra em erupção por <b>1d10+Fortitude</b>.</dd>
+<dt>Nível 4 — Habilidade: Gravetos</dt>
+<dd>Invoca 1d6 lacaios demoníacos flamejantes com os atributos (6, 6, 6, 7, 7, 8).</dd>
+<dt>Nível 5 (Discípulo de Lua Superior) — Ataque: Incinerar</dt>
+<dd><i>(sem descrição no material original)</i></dd>
+<dt>Nível 6 (Lua Superior) — Ataque: Cremar · 45 PSD</dt>
+<dd>Qualquer alvo com menos de 10 PV pode ser mirado, rolando Fineza para acertar. Se o alvo for atingido e não puder esquivar, é instantaneamente carbonizado e morre, com os órgãos queimados além de qualquer salvação. Atingidos por esta habilidade <b>não podem ser revividos</b>.</dd>
+</dl>
+</div>
+
+<div class="pager">
+<a href="kakushi.html">← Kakushi</a>
+<a href="respiracoes.html">Respirações →</a>
+</div>
+
+</main>
+</div>
+<script src="nav.js"></script>
+</body>
+</html>

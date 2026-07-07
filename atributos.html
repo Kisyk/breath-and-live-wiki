@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Atributos & Estatísticas — Breathe and Live 1934</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="app">
+<aside id="sidebar"></aside>
+<main>
+
+<p class="crumb"><a href="index.html">Início</a> › Fundamentos</p>
+<h1>Atributos & Estatísticas</h1>
+<p class="lead">Rolagens, atributos base, perícias derivadas e as estatísticas vitais do seu personagem.</p>
+
+<h2>Rolagens</h2>
+<p>As rolagens no sistema Breathe and Live são parecidas com as de outros RPGs de mesa populares: os jogadores sempre usam um <b>d20</b> e somam suas perícias e habilidades às rolagens apropriadas. A única diferença marcante é a separação entre perícias <b>base</b> e perícias <b>derivadas</b>.</p>
+<ul>
+<li><b>Perícias base</b> — o maior dos dois conjuntos de números, formado pelos 6 atributos base. Cada atributo recebe um modificador igual ao <span class="formula">total do atributo − 1</span>, usado nas rolagens. Os únicos bônus adicionais para essas rolagens vêm de <a href="habilidades.html">habilidades extrassensoriais</a> ou <a href="habilidades.html#sobre-humanas">características sobre-humanas</a>.</li>
+<li><b>Perícias derivadas</b> — usadas em cenas de interpretação fora do combate. O bônus ao d20 vem do total da perícia derivada, somando bônus de roupas, equipamentos ou outras perícias relevantes.</li>
+</ul>
+
+<h2>Vida, CA, Vigor e Reações</h2>
+<dl>
+<dt>Pontos de Vida (PV)</dt>
+<dd>Funcionam da mesma forma para todo personagem: todo espadachim começa com <span class="formula">20 de vida</span> base. A vida só aumenta permanentemente ao <a href="evolucao.html">subir de patente</a> ou ao adquirir melhorias de vida por treinamento.</dd>
+<dt>Vigor (Stamina)</dt>
+<dd>Determinado por <span class="formula">20 + Fortitude</span>. O vigor é usado para executar Formas de Respiração e a Respiração de Concentração Total. Se um espadachim chega a <b>0 de vigor</b>, é forçado a se recuperar por um turno e não pode atacar; se não conseguir fazer uma respiração de recuperação em 2 rodadas após chegar a 0, ele perde a consciência.</dd>
+<dt>Classe de Armadura (CA)</dt>
+<dd>A CA do jogador é <span class="formula">10 + Velocidade</span>.</dd>
+<dt>Pontos de Reação (PR)</dt>
+<dd>O número inicial é <span class="formula">5 + Velocidade + Intelecto</span>. As reações são sua salvaguarda contra a morte instantânea: gastando pontos de reação, você pode desviar, atacar, recarregar ou qualquer outra coisa que tenha desbloqueado, a qualquer momento do combate. As reações se recuperam totalmente durante o descanso. Veja os <a href="combate.html#reacoes">usos de Pontos de Reação</a>.</dd>
+</dl>
+
+<h2>Os 6 Atributos Base</h2>
+<table>
+<tr><th>Atributo</th><th>Descrição</th></tr>
+<tr><td class="num">Força</td><td>Base para força física. Qualquer coisa que exija um corpo forte pode pedir um teste de Força. <i>Exemplos:</i> levantar, arremessar, carregar, golpear com força, pressionar, bater ou balançar a espada com potência.</td></tr>
+<tr><td class="num">Fineza</td><td>Base para a destreza, agilidade e leveza do corpo. <i>Exemplos:</i> salto em distância, ginástica e feitos acrobáticos. Estende-se ao controle da espada e à capacidade de golpear corretamente.</td></tr>
+<tr><td class="num">Fortitude</td><td>Base para o bem-estar físico e a capacidade de aguentar dano. <i>Exemplos:</i> ser envenenado, ingerir material tóxico, adaptar-se a novas condições e resistir a impactos extremos.</td></tr>
+<tr><td class="num">Velocidade</td><td>Base para velocidade pura e raciocínio rápido. Um atributo de uso restrito que pode brilhar nas condições certas. <i>Exemplos:</i> disparadas, feitos de atletismo em sequência rápida ou mover-se de um alvo a outro.</td></tr>
+<tr><td class="num">Social</td><td>Base para tudo que exige uma língua de prata. <i>Exemplos:</i> encantar, mentir, interrogar, distinguir verdade de mentira ou convencer.</td></tr>
+<tr><td class="num">Intelecto</td><td>Base para qualquer coisa intelectualmente desafiadora. <i>Exemplos:</i> perceber, compreender, investigar, juntar pistas, educação geral e médica.</td></tr>
+</table>
+
+<h3>Definindo os atributos base</h3>
+<p>Há dois métodos principais, rápidos e justos:</p>
+<ul>
+<li><b>Rolagem:</b> role <b>6d6</b> e atribua cada resultado a um atributo base. Você pode distribuir os números depois de rolar todos os 6 dados, ou atribuir um número a cada rolagem individual.</li>
+<li><b>Distribuição fixa:</b> atribua os números <span class="formula">(0, 1, 2, 3, 3, 5)</span> aos atributos. Jogadores que começam em patentes mais altas podem ajustar os números de acordo.</li>
+</ul>
+<p>Cada atributo base recebe um modificador igual ao <span class="formula">total do atributo − 1</span>.</p>
+
+<h2>Perícias Derivadas</h2>
+<p>Embora não sejam usadas para rolagens em combate, as perícias derivadas oferecem muita ajuda em situações não combativas. Após criar os atributos base, o jogador distribui os números das derivadas: elas recebem um <b>conjunto de pontos igual ao atributo base</b> correspondente — quanto mais pontos no atributo base, melhores as derivadas. Elas ainda trazem benefícios indiretos ao combate: ataques básicos ganham bônus de dano de <b>Poder Bruto</b>, e <b>Precisão</b> ajuda em cortes básicos e tiros.</p>
+
+<table>
+<tr><th>Atributo</th><th>Perícias derivadas</th></tr>
+<tr><td class="num">Força</td><td><b>Atletismo</b> — saltar longas distâncias, correr em disparada, carregar objetos pesados, parkour etc.<br><b>Poder Bruto</b> — força inerente do corpo, vinda de genética ou treino; o físico do seu corpo.</td></tr>
+<tr><td class="num">Fineza</td><td><b>Destreza</b> — mover-se e agir com agilidade.<br><b>Equilíbrio</b> — manter a estabilidade física e mental.<br><b>Precisão</b> — mirar e ser preciso com ferramentas.</td></tr>
+<tr><td class="num">Fortitude</td><td><b>Mitridatismo</b> — resistir a venenos comuns e incomuns.<br><b>Resistência</b> — permanecer firme.<br><b>Tolerância</b> — resistência a ameaças corporais não venenosas, como comida, álcool e drogas.</td></tr>
+<tr><td class="num">Velocidade</td><td><b>Tempo de Reação</b> — reagir a estímulos súbitos.<br><b>Agilidade</b> — mover-se, saltar ou mergulhar com equilíbrio e postura.<br><b>Rapidez</b> — prestidigitação, pés ligeiros.<br><b>Sagacidade</b> — furtividade, dissimulação ou capacidade de se esconder.</td></tr>
+<tr><td class="num">Social</td><td><b>Enganação</b> — enganar ou ludibriar com mentiras, blefes ou pura lábia.<br><b>Atuação</b> — entreter, atuar ou montar uma cena.<br><b>Intimidação</b> — instilar medo nos outros.<br><b>Percepção</b> — consciência espacial e social.<br><b>Intuição</b> — perspicácia inata sobre lugares, pessoas ou situações.</td></tr>
+<tr><td class="num">Intelecto</td><td><b>Medicina</b> — conhecimento médico do corpo humano e de remédios.<br><b>Natureza</b> — conhecimento de topografia, biologia, geologia etc.<br><b>Ciência</b> — natureza científica de químicos, física, engenharia etc.<br><b>Investigação</b> — enxergar pistas ou indícios ocultos.<br><b>Sobrevivência</b> — suprir necessidades humanas básicas: achar comida, água, abrigo etc.</td></tr>
+</table>
+
+<div class="pager">
+<a href="criacao-de-personagem.html">← Criação de Personagem</a>
+<a href="habilidades.html">Habilidades Iniciais →</a>
+</div>
+
+</main>
+</div>
+<script src="nav.js"></script>
+</body>
+</html>
