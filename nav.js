@@ -38,6 +38,19 @@
       ["respiracao-oeste.html", "Respiração do Oeste"],
       ["respiracao-neve.html", "Respiração da Neve"],
     ]},
+    { title: "Respirações — Limiar Crescente", items: [
+      ["respiracao-dragoes-gemeos.html", "Dragões Gêmeos"],
+      ["respiracao-constelacoes.html", "Constelações"],
+      ["respiracao-escuridao.html", "Escuridão"],
+      ["respiracao-espiritos.html", "Espíritos"],
+      ["respiracao-gelo.html", "Gelo"],
+      ["respiracao-luz.html", "Luz"],
+      ["respiracao-montanha.html", "Montanha"],
+      ["respiracao-nevasca.html", "Nevasca"],
+      ["respiracao-profana.html", "Profana"],
+      ["respiracao-yin.html", "Yin"],
+      ["respiracao-yang.html", "Yang"],
+    ]},
     { title: "Progressão", items: [
       ["evolucao.html", "Evolução & Perícias"],
       ["habilidades-superiores.html", "Habilidades Superiores"],
@@ -78,6 +91,7 @@
       `<p><b>Breathe and Live 1934 — Demon Slayer Tabletop System</b> · criado por Nautilus, com emendas de SunlightYellow. ` +
       `<a href="livro-original.pdf" target="_blank" rel="noopener">📖 Livro original (PDF, em inglês)</a></p>` +
       `<p>Tradução feita com o auxílio de IA generativa por <a href="https://github.com/dehrangerz9" target="_blank" rel="noopener">@yume fernandes</a>. ` +
+      `Respirações do Limiar Crescente adaptadas de <i>RPG Limiar Crescente — Livro de Respirações</i> (Mateus "Saga" Lopes & Gabriel "Buda" Barbosa). ` +
       `Obra de fãs, sem afiliação oficial com Koyoharu Gotouge, Shueisha ou Ufotable.</p>`;
     main.appendChild(foot);
   }
