@@ -25,19 +25,26 @@
 <h2>Formas</h2>
 <table>
 <tr><th>#</th><th>Forma</th><th>Descrição</th><th>Atributo</th><th>Vigor</th><th>Alcance</th><th>Dano & Efeitos</th></tr>
-<tr><td class="num">1</td><td><b>Garra Demoníaca</b></td><td>Quatro golpes em sequência, girando a arma em torno do corpo, tomando a forma de garras infernais.</td><td>Habilidade</td><td>3</td><td>1,5 m / corpo a corpo</td><td class="dmg">1d10 + Habilidade</td></tr>
-<tr><td class="num">2</td><td><b>Sangria Lacerante</b></td><td>A arma é envolvida por energia vermelha antes de ser cravada e retirada com brutalidade.</td><td>Habilidade</td><td>3</td><td>1,5 m / corpo a corpo</td><td class="dmg">1d10 + Habilidade</td></tr>
-<tr><td class="num">3</td><td><b>Perfurador de Rochas</b></td><td>Um ataque rápido e potente o bastante para perfurar até mesmo alvos extremamente resistentes.</td><td>Força</td><td>4</td><td>1,5 m / corpo a corpo</td><td class="dmg">1d12 + Força (ignora bônus de armadura)</td></tr>
-<tr><td class="num">4</td><td><b>Cataclisma</b></td><td>Um salto poderoso culmina em um golpe descendente que gera um estrondo e uma onda de choque em área.</td><td>Força</td><td>6</td><td>3 m</td><td class="dmg">2d8 + Força <span class="tag cleave">Varredura</span></td></tr>
-<tr><td class="num">5</td><td><b>Invocação Infernal</b></td><td>Um ritual sombrio transforma a arma em um "Estigma", concedendo uma habilidade especial temporária.</td><td>—</td><td>4</td><td>Pessoal</td><td>Escolhe um Estigma (ver Habilidade Especial) por 2 rodadas</td></tr>
-<tr><td class="num">6</td><td><b>Divisor de Mundos</b></td><td>Energia condensada é lançada em um arco horizontal, cortando tudo à frente até atingir o alvo principal.</td><td>Força</td><td>9</td><td>6 m</td><td class="dmg">2d8 + Força <span class="tag ranged">À Distância</span></td></tr>
-<tr><td class="num">7</td><td><b>Ascensão Caótica</b></td><td>Após acumular fúria em combate, o usuário assume uma forma quase demoníaca de imenso poder destrutivo.</td><td>—</td><td>13</td><td>4,5 m</td><td class="dmg">2d8 de dano bônus por 2 rodadas (metade convertida em Dano Verdadeiro)</td></tr>
+<tr><td class="num">1</td><td><b>Garra Demoníaca</b></td><td>O usuário desfere 4 golpes em sequência, girando a arma em torno do corpo; a cada golpe, o ataque toma a forma de garras infernais.</td><td>Habilidade</td><td>3</td><td>1,5 m / corpo a corpo</td><td class="dmg">1d10 + Habilidade da arma</td></tr>
+<tr><td class="num">2</td><td><b>Sangria Lacerante</b></td><td>A arma é envolvida por uma energia espectral vermelha; o usuário avança, crava a arma e a retira com brutalidade, fazendo sangue jorrar do ferimento.</td><td>Habilidade</td><td>3</td><td>1,5 m / corpo a corpo</td><td class="dmg">1d10 + Habilidade da arma <small>(causa <a href="combate.html#efeitos">Sangramento</a>)</small></td></tr>
+<tr><td class="num">3</td><td><b>Perfurador de Rochas</b></td><td>O usuário respira fundo, potencializando o corpo por completo; desfere um ataque tão rápido e forte que a arma parece desaparecer e reaparecer no corpo do alvo, perfurando até alvos resistentes.</td><td>Força</td><td>4</td><td>1,5 m / corpo a corpo</td><td class="dmg">1d12 + Força (ignora bônus de armadura e da Qualidade Robusto)</td></tr>
+<tr><td class="num">4</td><td><b>Cataclisma</b></td><td>Envolvido em densa energia vermelha, o usuário avança e salta em direção ao alvo; usando a força e a velocidade da queda, desfere um ataque de cima para baixo que gera um estrondo e uma onda de choque em área.</td><td>Força</td><td>6</td><td>3 m</td><td class="dmg">1d12 + Força <span class="tag cleave">Varredura</span> <small>(causa <a href="combate.html#efeitos">Sangramento</a>)</small></td></tr>
+<tr><td class="num">5</td><td><b>Invocação Infernal</b></td><td>O usuário fecha os olhos e canaliza uma densa energia vermelha; ao chocar o cabo da arma contra o chão, essa energia condensa-se por toda a estrutura, corrompendo-a e dando origem a uma arma infernal — o Estigma. <i>(ver tabela abaixo)</i></td><td>—</td><td>4</td><td>Pessoal</td><td>Escolhe um Estigma por 2 rodadas</td></tr>
+<tr><td class="num">6</td><td><b>Divisor de Mundos</b></td><td>O usuário tensiona os joelhos em base firme, respirando profundamente; concentra energia na lâmina e, em um arco horizontal, lança uma poderosa onda de energia condensada que corta tudo à frente até acertar o alvo.</td><td>Força</td><td>9</td><td>6 m</td><td class="dmg">2d8 + Força <span class="tag ranged">À Distância</span></td></tr>
+<tr><td class="num">7</td><td><b>Ascensão Caótica</b></td><td>Após acumular Cólera em combate (sofrendo, causando dano ou abatendo alvos), o usuário pode assumir uma forma quase demoníaca de imenso poder destrutivo, com veias pulsantes, manchas vermelhas pela pele e olhos negros.</td><td>—</td><td>13</td><td>4,5 m</td><td class="dmg">2d8 de dano bônus por 2 rodadas (metade convertida em Dano Verdadeiro); inimigos próximos podem ficar <a href="combate.html#efeitos">Amaldiçoados</a> pelo terror</td></tr>
+</table>
+
+<h2>Estigmas — Quinta Forma</h2>
+<table>
+<tr><th>Estigma</th><th>Efeito</th></tr>
+<tr><td class="num">Devorador de Almas</td><td>25% de todo dano causado pelo usuário é convertido em Dano Verdadeiro; ao acertar, o alvo sofre −1d4 na próxima ação.</td></tr>
+<tr><td class="num">Ruptor Ínfero</td><td>+1d8 de dano nos ataques; críticos automáticos com resultado 19 no d20; o alvo atingido fica <a href="combate.html#efeitos">Amaldiçoado</a> por 4 turnos.</td></tr>
+<tr><td class="num">Guardião Umbral</td><td>O usuário recupera 1d8 de vida após causar dano em um alvo, uma vez por rodada.</td></tr>
 </table>
 
 <div class="special-box">
 <h2>Habilidade Especial | Encarnação Maligna</h2>
-<p>Ao chegar a 0 de vida, o corpo do usuário libera energia sinistra: por 3 rodadas ele permanece em combate, imune a dano e condições, podendo até atacar duas vezes por turno. Ao fim do efeito, cai e deve ser socorrido imediatamente. Utilizável apenas 1 vez por combate.</p>
-<p class="note"><b>Estigmas (Quinta Forma):</b> <i>Devorador de Almas</i> (25% do dano convertido em Verdadeiro), <i>Ruptor Ínfero</i> (+1d8 de dano, críticos automáticos em 19), <i>Guardião Umbral</i> (cura 1d8 por acerto).</p>
+<p>Ao chegar a 0 de vida, o corpo do usuário libera energia sinistra: por 3 rodadas ele permanece em combate, imune a dano e condições, podendo atacar duas vezes por turno. Ao fim do efeito, cai e deve ser socorrido imediatamente. Utilizável apenas 1 vez por combate.</p>
 </div>
 
 <div class="pager">
