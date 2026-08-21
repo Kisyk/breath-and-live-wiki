@@ -15,6 +15,7 @@
       ["demonificacao.html", "Demonificação"],
       ["kakushi.html", "Kakushi"],
       ["demonio.html", "Demônio"],
+      ["multiclasse.html", "Multiclasse"],
     ]},
     { title: "Respirações — Canônicas", items: [
       ["respiracoes.html", "Visão Geral & Regras"],
