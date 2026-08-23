@@ -1,11 +1,14 @@
 // Navegação compartilhada da wiki — Breathe and Live 1934
+// v2 — reorganizada para leitura mais intuitiva (ver relatório de reorganização)
 (function () {
   const NAV = [
     { title: "Início", items: [["index.html", "Página Inicial"]] },
-    { title: "Fundamentos", items: [
+    { title: "Comece Aqui", items: [
       ["criacao-de-personagem.html", "Criação de Personagem"],
       ["atributos.html", "Atributos & Estatísticas"],
       ["habilidades.html", "Habilidades Iniciais"],
+    ]},
+    { title: "Regras de Combate", items: [
       ["combate.html", "Combate & Efeitos"],
     ]},
     { title: "Classes", items: [
@@ -16,6 +19,10 @@
       ["kakushi.html", "Kakushi"],
       ["demonio.html", "Demônio"],
       ["multiclasse.html", "Multiclasse"],
+    ]},
+    { title: "Progressão", items: [
+      ["evolucao.html", "Evolução & Perícias"],
+      ["habilidades-superiores.html", "Habilidades Superiores"],
     ]},
     { title: "Respirações — Canônicas", items: [
       ["respiracoes.html", "Visão Geral & Regras"],
@@ -34,7 +41,7 @@
       ["respiracao-amor.html", "Respiração do Amor"],
       ["respiracao-fera.html", "Respiração da Fera"],
     ]},
-    { title: "Respirações — Módulo", items: [
+    { title: "Respirações — Módulo Original", items: [
       ["respiracao-oceano.html", "Respiração do Oceano"],
       ["respiracao-oeste.html", "Respiração do Oeste"],
       ["respiracao-neve.html", "Respiração da Neve"],
@@ -51,10 +58,6 @@
       ["respiracao-profana.html", "Profana"],
       ["respiracao-yin.html", "Yin"],
       ["respiracao-yang.html", "Yang"],
-    ]},
-    { title: "Progressão", items: [
-      ["evolucao.html", "Evolução & Perícias"],
-      ["habilidades-superiores.html", "Habilidades Superiores"],
     ]},
     { title: "Equipamento", items: [
       ["armas.html", "Armas"],
@@ -104,7 +107,6 @@
   input.addEventListener("input", () => {
     const q = input.value.trim().toLowerCase();
     if (!q) {
-      // restaura o estado padrão: só a seção da página atual aberta
       sections.forEach((d, i) => {
         d.style.display = "";
         d.open = defaultOpen[i];
@@ -120,7 +122,7 @@
         if (hit) any = true;
       });
       d.style.display = any ? "" : "none";
-      d.open = any; // expande as seções com resultados
+      d.open = any;
     });
   });
 })();
